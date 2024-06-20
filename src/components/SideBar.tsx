@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { ChevronRightIcon } from "@heroicons/react/solid";
+import React, { useEffect } from "react";
 
 const GitLogo = require("../assets/logos/GitLogo.png");
 const LinkedinLogo = require("../assets/logos/LinkedinLogo.png");
-const KaggleLogo = require("../assets/logos/KaggleLogo.png");
 const MailLogo = require("../assets/logos/MailLogo.png");
 
 const JSIcon = require("../assets/icons/JSIcon.png");

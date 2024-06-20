@@ -9,25 +9,29 @@ const JsLogo = require("../assets/logos/JsLogo.png");
 const NextLogo = require("../assets/logos/NextLogo.png");
 const TailwindLogo = require("../assets/logos/TailwindLogo.png");
 const SqlLogo = require("../assets/logos/SqlLogo.png");
-const ReduxLogo = require("../assets/logos/ReduxLogo.png");
 const FirebaseLogo = require("../assets/logos/FirebaseLogo.png");
 const MongoDBLogo = require("../assets/logos/MongoDBLogo.png");
 const NodeJSLogo = require("../assets/logos/NodeJSLogo.png");
-const DockerLogo = require("../assets/logos/DockerLogo.png");
+const JavaLogo = require("../assets/logos/java-logo-1.png");
+const AngularLogo = require("../assets/logos/angularlogo.png");
+const VueLogo = require("../assets/logos/vue.png");
+const amazon = require("../assets/logos/amazon.png");
 
 const skills = [
-  { name: "JavaScript (ES6+)", logo: JsLogo },
+  { name: "JavaScript", logo: JsLogo },
+  { name: "TypeScript", logo: TypescriptLogo },
+  { name: "Angular", logo: AngularLogo },
   { name: "Next.js", logo: NextLogo },
   { name: "React", logo: ReactLogo },
-  { name: "TypeScript", logo: TypescriptLogo },
+  { name: "Vue.js", logo: VueLogo },
   { name: "Tailwind CSS", logo: TailwindLogo },
-  { name: "Redux", logo: ReduxLogo },
+  { name: "Java", logo: JavaLogo },
   { name: "Python", logo: PythonLogo },
   { name: "Firebase", logo: FirebaseLogo },
   { name: "Nodejs", logo: NodeJSLogo },
   { name: "SQL", logo: SqlLogo },
   { name: "MongoDB", logo: MongoDBLogo },
-  { name: "Docker", logo: DockerLogo },
+  { name: "AWS", logo: amazon },
 ];
 
 const About = () => {
@@ -46,17 +50,15 @@ const About = () => {
         </div>
         <div className="text-[#a2aabc] text-lg mt-5">
           <code>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros
-            non nisi vulputate eleifend. Vestibulum erat ipsum, lacinia ut nibh
-            ut, pulvinar interdum lorem. Aliquam et nisi eu risus ultrices
-            suscipit nec nec quam. Suspendisse pretium fermentum luctus.
-            Maecenas vitae vestibulum ipsum, ut varius diam. Phasellus mattis
-            nunc vel purus maximus, sit amet congue ligula tincidunt. Nulla
-            tristique luctus lacinia. Nullam ut tortor arcu.
+            I am a motivated software engineering student, spicalizing in
+            various technologies adn languages. I have experince utilizing
+            frontend frameworks such as Angular and React.js, as well as backend
+            langaues such as Java and Python. Please view my projcets to get a
+            better understanding of my abilities!
           </code>
           <br />
           <br />
-          <code>Aenean in mi non leo placerat suscipit a eget odio:</code>
+          <code>My Technologies:</code>
           <List list={skills} />
         </div>
       </div>

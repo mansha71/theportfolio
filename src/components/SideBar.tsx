@@ -1,3 +1,4 @@
+// src/components/SideBar.tsx
 import React, { useState, useEffect } from "react";
 import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
@@ -9,12 +10,18 @@ const MailLogo = require("../assets/logos/MailLogo.png");
 const JSIcon = require("../assets/icons/JSIcon.png");
 const TSIcon = require("../assets/icons/TSIcon.png");
 
-const SideBar = ({
-  setWidth,
-  width,
-}: {
+interface SideBarProps {
   setWidth: React.Dispatch<React.SetStateAction<number>>;
   width: number;
+  activeTab: string; // Define activeTab prop
+  setActiveTab: React.Dispatch<React.SetStateAction<string>>; // Define setActiveTab prop
+}
+
+const SideBar: React.FC<SideBarProps> = ({
+  setWidth,
+  width,
+  activeTab,
+  setActiveTab,
 }) => {
   const [showWebList, SetShowWebList] = useState(true);
   const [showProjectsList, SetShowProjectsList] = useState(true);

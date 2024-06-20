@@ -50,8 +50,8 @@ const About = () => {
         </div>
         <div className="text-[#a2aabc] text-lg mt-5">
           <code>
-            I am a motivated software engineering student, spicalizing in
-            various technologies adn languages. I have experince utilizing
+            I am a motivated software engineering student, specializing in
+            various technologies and languages. I have experince utilizing
             frontend frameworks such as Angular and React.js, as well as backend
             langaues such as Java and Python. Please view my projcets to get a
             better understanding of my abilities!

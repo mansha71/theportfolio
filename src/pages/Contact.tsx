@@ -13,14 +13,11 @@ const Contact = () => {
       </div>
       <div className="text-[#a2aabc] text-lg mt-5 mx-12 lg:mx-60 flex flex-col items-center text-justify">
         <code>
-          Currently looking for a new opportunity, you can contact me by
-          clicking on the button below. <br />
-          Whether you have a question or just want to say hi, feel free to
-          contact me and I’ll try my best to get back to you!
+          Feel free to reach out to me for any inquries or opportunities!
         </code>
         <button className=" border border-lightblue_vs text-lightblue_vs mt-10 p-3 rounded hover:bg-opacity-10 hover:bg-lightblue_vs w-1/2">
-          <a href="mailto:youssefkizou@gmail.com">
-            <code>Contact</code>
+          <a href="mailto:mansharm71@gmail.com">
+            <code>Contact Email</code>
           </a>
         </button>
       </div>

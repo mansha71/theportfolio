@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import tw from "tailwind-styled-components";
 import { XIcon } from "@heroicons/react/solid";
 
@@ -99,7 +99,29 @@ const NavBar: React.FC<Props> = ({ activeTab, setActiveTab }) => {
           />
         </Container>
       )}
-
+      {closedTabs.includes("projects") ? null : (
+        <Container
+          className={
+            activeTab === "projects"
+              ? "bg-[#1e1e1e] text-yellow_vs"
+              : "hover:bg-[#1e1e1e] hover:text-yellow_vs"
+          }
+          onClick={() => {
+            setActiveTab("projects");
+          }}
+        >
+          <img src={TSIcon} alt="JS Icon" className="w-7 mr-1 text-yellow_vs" />
+          Projects.ts
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setActiveTab("home");
+              setClosedTabs((prevState) => [...prevState, "projects"]);
+            }}
+          />
+        </Container>
+      )}
       {closedTabs.includes("contact") ? null : (
         <Container
           className={

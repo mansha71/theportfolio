@@ -49,104 +49,86 @@ const SideBar = ({
         <div>
           <div className="sideBarTitle">Manan Sharma</div>
           <div className="flex flex-col">
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                setActiveTab("home");
-              }}
+            <button
+              type="button"
+              onClick={() => setActiveTab("home")}
+              className={`ml-4 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ${
+                activeTab === "home" ? "bg-[#1e1e1e] text-yellow_vs" : ""
+              }`}
             >
-              <div
-                className={`ml-4 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ${
-                  activeTab === "home" ? "bg-[#1e1e1e] text-yellow_vs" : ""
-                }`}
-              >
-                <img src={JSIcon} alt="JS Icon" className="w-7 mr-1 ml-2" />
-                <p>Home.ts</p>
-              </div>
-            </a>
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                setActiveTab("about");
-              }}
+              <img src={JSIcon} alt="JS Icon" className="w-7 mr-1 ml-2" />
+              <p>Home.ts</p>
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveTab("about")}
+              className={`ml-4 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ${
+                activeTab === "about" ? "bg-[#1e1e1e] text-yellow_vs" : ""
+              }`}
             >
-              <div
-                className={`ml-4 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ${
-                  activeTab === "about" ? "bg-[#1e1e1e] text-yellow_vs" : ""
-                }`}
-              >
-                <img src={TSIcon} alt="TS Icon" className="w-7 mr-1 ml-2" />
-                <p>About.ts</p>
-              </div>
-            </a>
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                setActiveTab("resume");
-              }}
+              <img src={TSIcon} alt="TS Icon" className="w-7 mr-1 ml-2" />
+              <p>About.ts</p>
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveTab("resume")}
+              className={`ml-4 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ${
+                activeTab === "resume" ? "bg-[#1e1e1e] text-yellow_vs" : ""
+              }`}
             >
-              <div
-                className={`ml-4 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ${
-                  activeTab === "resume" ? "bg-[#1e1e1e] text-yellow_vs" : ""
-                }`}
-              >
-                <img src={TSIcon} alt="TS Icon" className="w-7 mr-1 ml-2" />
-                <p>Resume.ts</p>
-              </div>
-            </a>
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                setActiveTab("projects");
-              }}
+              <img src={TSIcon} alt="TS Icon" className="w-7 mr-1 ml-2" />
+              <p>Resume.ts</p>
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveTab("projects")}
+              className={`ml-4 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ${
+                activeTab === "projects" ? "bg-[#1e1e1e] text-yellow_vs" : ""
+              }`}
             >
-              <div
-                className={`ml-4 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ${
-                  activeTab === "projects" ? "bg-[#1e1e1e] text-yellow_vs" : ""
-                }`}
-              >
-                <img src={TSIcon} alt="TS Icon" className="w-7 mr-1 ml-2" />
-                <p>Projects.ts</p>
-              </div>
-            </a>
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                setActiveTab("contact");
-              }}
+              <img src={TSIcon} alt="TS Icon" className="w-7 mr-1 ml-2" />
+              <p>Projects.ts</p>
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveTab("contact")}
+              className={`ml-4 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ${
+                activeTab === "contact" ? "bg-[#1e1e1e] text-yellow_vs" : ""
+              }`}
             >
-              <div
-                className={`ml-4 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ${
-                  activeTab === "contact" ? "bg-[#1e1e1e] text-yellow_vs" : ""
-                }`}
-              >
-                <img src={TSIcon} alt="TS Icon" className="w-7 mr-1 ml-2" />
-                <p>Contact.ts</p>
-              </div>
-            </a>
+              <img src={TSIcon} alt="TS Icon" className="w-7 mr-1 ml-2" />
+              <p>Contact.ts</p>
+            </button>
           </div>
           <div className="absolute w-full bottom-10 px-6">
             <div className="flex justify-between">
-              <a href="https://github.com/mansha71" target="blank">
+              <a
+                href="https://github.com/mansha71"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={GitLogo}
                   alt="Git Logo"
                   className="h-10 w-10 text-yellow_vs hover:cursor-pointer duration-500 hover:scale-125"
                 />
               </a>
-              <a href="https://www.linkedin.com/in/manshr/" target="blank">
+              <a
+                href="https://www.linkedin.com/in/manshr/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={LinkedinLogo}
                   alt="Linkedin Logo"
                   className="h-10 w-10 text-yellow_vs hover:cursor-pointer duration-500 hover:scale-125"
                 />
               </a>
-              <a href="mailto:mansharm71@gmail.com" target="blank">
+              <a
+                href="mailto:mansharm71@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={MailLogo}
                   alt="Mail Logo"

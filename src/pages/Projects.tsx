@@ -62,7 +62,7 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <div id="Projects" className="pb-72 mt-36">
+    <div id="Projects" className="pb-72 mt-20">
       <div className="mx-12 lg:mx-60">
         <MailIcon className="h-5 w-5 mr-4 text-yellow_vs" />
         <code className="text-[#e6f1ff] text-3xl mt-5 whitespace-nowrap block">
@@ -72,42 +72,42 @@ const Projects = () => {
       </div>
       <div className="mx-12 lg:mx-60">
         {projectsData.map((project, index) => (
-          <div key={index} className="flex flex-col lg:flex-row mb-12">
-            <div className="lg:w-1/2 lg:pr-8">
-              <h2 className="text-2xl text-[#e6f1ff] mb-2">{project.title}</h2>
-              <p className="text-[#a2aabc] mb-4">{project.description}</p>
-              <h3 className="text-xl text-[#e6f1ff] mb-2">
-                Technologies Used:
-              </h3>
-              <ul className="list-disc list-inside mb-4">
-                {project.technologies.map((tech, idx) => (
-                  <li key={idx} className="text-[#a2aabc]">
-                    {tech}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="lg:w-1/2 mt-4 lg:mt-0">
-              <Carousel
-                showArrows={true}
-                dynamicHeight={true}
-                infiniteLoop={true}
-                showThumbs={false} // Hides thumbnail navigation
-              >
-                {project.imageUrls.map((imageUrl, idx) => (
-                  <div key={idx}>
-                    <img
-                      src={imageUrl}
-                      alt={`${project.title} ${idx + 1}`}
-                      style={{
-                        maxHeight: "500px",
-                        objectFit: "cover",
-                        maxWidth: "600px",
-                      }}
-                    />
-                  </div>
-                ))}
-              </Carousel>
+          <div key={index} className="bg-[#1a1a1a] p-8 rounded-lg mb-20"> {/* Added background, padding, and rounded corners */}
+            <div className="flex flex-col lg:flex-row mb-28"> {/* Increased mb-20 to mb-28 */}
+              <div className="lg:w-1/2 lg:pr-8">
+                <h2 className="text-2xl text-[#e6f1ff] mb-2">{project.title}</h2>
+                <p className="text-[#a2aabc] mb-4">{project.description}</p>
+                <h3 className="text-xl text-[#e6f1ff] mb-2">Technologies Used:</h3>
+                <ul className="list-disc list-inside mb-4">
+                  {project.technologies.map((tech, idx) => (
+                    <li key={idx} className="text-[#a2aabc]">
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="lg:w-1/2 mt-4 lg:mt-0">
+                <Carousel
+                  showArrows={true}
+                  dynamicHeight={true}
+                  infiniteLoop={true}
+                  showThumbs={false} // Hides thumbnail navigation
+                >
+                  {project.imageUrls.map((imageUrl, idx) => (
+                    <div key={idx}>
+                      <img
+                        src={imageUrl}
+                        alt={`${project.title} ${idx + 1}`}
+                        style={{
+                          maxHeight: "500px",
+                          objectFit: "cover",
+                          maxWidth: "600px",
+                        }}
+                      />
+                    </div>
+                  ))}
+                </Carousel>
+              </div>
             </div>
           </div>
         ))}

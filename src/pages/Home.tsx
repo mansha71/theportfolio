@@ -28,7 +28,7 @@ const Home = () => {
       case "home":
         return (
           <div>
-            <Header />
+            <Header setActiveTab={setActiveTab} />
             <About />
             <Resume />
             <Projects />
@@ -46,7 +46,7 @@ const Home = () => {
       default:
         return (
           <div>
-            <Header />
+            <Header setActiveTab={setActiveTab} />
             <About />
             <Resume />
             <Projects />
@@ -71,7 +71,7 @@ const Home = () => {
       </div>
       <div className="bg-[#1e1e1e] h-full flex-grow">
         <div className="lg:hidden">
-          <MobileMenu />
+          <MobileMenu activeTab={activeTab} setActiveTab={setActiveTab} />
         </div>
         <div
           className="bg-[#424042] h-16 hidden lg:block"

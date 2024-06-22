@@ -10,61 +10,20 @@ import { Disclosure, Transition } from "@headlessui/react";
 const JSIcon = require("../assets/icons/JSIcon.png");
 const TSIcon = require("../assets/icons/TSIcon.png");
 
-const MobileMenu = () => {
-  const projects = [
-    {
-      name: "First Project",
-      href: "#",
-      icon: (
-        <img
-          src={JSIcon}
-          alt="JS Icon"
-          className="w-7 mr-1  ml-5 text-yellow_vs"
-        />
-      ),
-      current: true,
-    },
-    {
-      name: "Second Project",
-      href: "#",
-      icon: (
-        <img
-          src={TSIcon}
-          alt="TS Icon"
-          className="w-7 mr-1  ml-5 text-yellow_vs"
-        />
-      ),
-      current: false,
-    },
-    {
-      name: "Third Project",
-      href: "#",
-      icon: (
-        <img
-          src={JSIcon}
-          alt="JS Icon"
-          className="w-7 mr-1  ml-5 text-yellow_vs"
-        />
-      ),
-      current: false,
-    },
-    {
-      name: "Fourth Project",
-      href: "#",
-      icon: (
-        <img
-          src={JSIcon}
-          alt="JS Icon"
-          className="w-7 mr-1  ml-5 text-yellow_vs"
-        />
-      ),
-      current: false,
-    },
+const MobileMenu = ({ activeTab, setActiveTab }: { activeTab: string; setActiveTab: React.Dispatch<React.SetStateAction<string>> }) => {
+  const menuItems = [
+    { name: "Home.ts", tab: "home", icon: <img src={JSIcon} alt="JS Icon" className="w-7 mr-1  ml-5 text-yellow_vs" /> },
+    { name: "About.ts", tab: "about", icon: <img src={TSIcon} alt="TS Icon" className="w-7 mr-1  ml-5 text-yellow_vs" /> },
+    { name: "Resume.ts", tab: "resume", icon: <img src={TSIcon} alt="TS Icon" className="w-7 mr-1  ml-5 text-yellow_vs" /> },
+    { name: "Projects.ts", tab: "projects", icon: <img src={TSIcon} alt="TS Icon" className="w-7 mr-1  ml-5 text-yellow_vs" /> },
+    { name: "Contact.ts", tab: "contact", icon: <img src={TSIcon} alt="TS Icon" className="w-7 mr-1  ml-5 text-yellow_vs" /> },
   ];
-  function classNames(...classes) {
+
+  function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
   }
-  const [showProjectsList, SetShowProjectsList] = useState(true);
+
+  const [showProjectsList, setShowProjectsList] = useState(true);
 
   return (
     <Disclosure>
@@ -75,7 +34,7 @@ const MobileMenu = () => {
               <XIcon className="block w-16" aria-hidden="true" />
             ) : (
               <MenuIcon className="block w-16" aria-hidden="true" />
-            )}{" "}
+            )}
           </Disclosure.Button>
           <Transition
             enter="transition duration-100 ease-out"
@@ -89,36 +48,33 @@ const MobileMenu = () => {
               <code className="px-2 pt-2 pb-3 space-y-1 text-white">
                 <div
                   className="mb-2 ml-4 font-bold flex text-xl"
-                  onClick={() => SetShowProjectsList(!showProjectsList)}
+                  onClick={() => setShowProjectsList(!showProjectsList)}
                 >
                   {showProjectsList ? (
                     <ChevronDownIcon className="w-7 mr-4" />
                   ) : (
-                    <ChevronRightIcon className=" w-7 mr-4 " />
+                    <ChevronRightIcon className="w-7 mr-4" />
                   )}
-                  Projects :
+                  Menu:
                 </div>
-                {showProjectsList
-                  ? projects.map((item) => (
-                      <Disclosure.Button
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "block px-3 py-2 rounded-md text-base font-medium"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        <div className="flex ml-6">
-                          {item.icon}
-                          {item.name}
-                        </div>
-                      </Disclosure.Button>
-                    ))
-                  : null}
+                {showProjectsList &&
+                  menuItems.map((item) => (
+                    <Disclosure.Button
+                      key={item.tab}
+                      as="a"
+                      onClick={() => setActiveTab(item.tab)}
+                      className={classNames(
+                        activeTab === item.tab ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                        "block px-3 py-2 rounded-md text-base font-medium"
+                      )}
+                      aria-current={activeTab === item.tab ? "page" : undefined}
+                    >
+                      <div className="flex ml-6">
+                        {item.icon}
+                        {item.name}
+                      </div>
+                    </Disclosure.Button>
+                  ))}
               </code>
             </Disclosure.Panel>
           </Transition>

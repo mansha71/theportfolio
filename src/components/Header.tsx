@@ -1,7 +1,7 @@
 import React from "react";
 const d2 = require("../assets/images/fp.png");
 
-function Header() {
+const Header = ({ setActiveTab }: { setActiveTab: React.Dispatch<React.SetStateAction<string>> }) => {
   return (
     <div>
       <div
@@ -13,7 +13,10 @@ function Header() {
             <code className="text-lightblue_vs">Hi, my name is</code>
             <code className="text-[#e6f1ff] text-7xl mt-5">Manan Sharma</code>
           </div>
-          <button className="border border-lightblue_vs text-lightblue_vs mt-10 p-3 rounded hover:bg-opacity-10 hover:bg-lightblue_vs w-1/2">
+          <button
+            onClick={() => setActiveTab("projects")}
+            className="border border-lightblue_vs text-lightblue_vs mt-10 p-3 rounded hover:bg-opacity-10 hover:bg-lightblue_vs w-1/2"
+          >
             <code>Check out my Projects !</code>
           </button>
         </div>
@@ -27,6 +30,6 @@ function Header() {
       </div>
     </div>
   );
-}
+};
 
 export default Header;

@@ -2,7 +2,6 @@ import React from "react";
 import { MailIcon } from "@heroicons/react/solid";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { describe } from "node:test";
 
 const a1 = require("../assets/images/1a.png");
 const a2 = require("../assets/images/a5.png");
@@ -34,21 +33,15 @@ const projectsData = [
   {
     title: "BudgetEz: Finance Tracker",
     description:
-    "Developed a comprehensive budget tracker application named BudgetEz, utilizing the MERN stack (MongoDB, Express.js, React, Node.js). Integrated Clerk for secure user authentication. Enabled users to input income and expenses, displaying data to assist in effective budgeting. Implemented dynamic insights and analytics to provide users with actionable financial insights. Ensured a structured, maintainable, and scalable codebase with thorough documentation for seamless maintenance and future enhancements.",
-    technologies: [
-      "React",
-      "Express.js",
-      "MongoDB",
-      "Node.js"
-    ],
-    imageUrls: [a1]
-  }
-  ,
+      "Developed a comprehensive budget tracker application named BudgetEz, utilizing the MERN stack (MongoDB, Express.js, React, Node.js). Integrated Clerk for secure user authentication. Enabled users to input income and expenses, displaying data to assist in effective budgeting. Implemented dynamic insights and analytics to provide users with actionable financial insights. Ensured a structured, maintainable, and scalable codebase with thorough documentation for seamless maintenance and future enhancements.",
+    technologies: ["React", "Express.js", "MongoDB", "Node.js"],
+    imageUrls: [a1],
+  },
   {
     title: "Habit Spark: Habit Tracker",
     description:
       "Created a Habit Tracking Chrome extension using React, TypeScript, CSS, and JavaScript. The extension aids users in monitoring and improving their habits. Utilized Google Chrome storage for secure data storage, ensuring persistence across sessions, and implemented an intuitive and visually appealing UI.",
-    technologies: ["React", "Typescript","CSS", "Google Storage"],
+    technologies: ["React", "Typescript", "CSS", "Google Storage"],
     imageUrls: [b1, b2],
   },
   {
@@ -87,12 +80,20 @@ const Projects = () => {
       </div>
       <div className="mx-12 lg:mx-60">
         {projectsData.map((project, index) => (
-          <div key={index} className="bg-[#1a1a1a] p-8 rounded-lg mb-20"> {/* Added background, padding, and rounded corners */}
-            <div className="flex flex-col lg:flex-row mb-28"> {/* Increased mb-20 to mb-28 */}
+          <div key={index} className="bg-[#1a1a1a] p-8 rounded-lg mb-20">
+            {" "}
+            {/* Added background, padding, and rounded corners */}
+            <div className="flex flex-col lg:flex-row mb-28">
+              {" "}
+              {/* Increased mb-20 to mb-28 */}
               <div className="lg:w-1/2 lg:pr-8">
-                <h2 className="text-2xl text-[#e6f1ff] mb-2">{project.title}</h2>
+                <h2 className="text-2xl text-[#e6f1ff] mb-2">
+                  {project.title}
+                </h2>
                 <p className="text-[#a2aabc] mb-4">{project.description}</p>
-                <h3 className="text-xl text-[#e6f1ff] mb-2">Technologies Used:</h3>
+                <h3 className="text-xl text-[#e6f1ff] mb-2">
+                  Technologies Used:
+                </h3>
                 <ul className="list-disc list-inside mb-4">
                   {project.technologies.map((tech, idx) => (
                     <li key={idx} className="text-[#a2aabc]">

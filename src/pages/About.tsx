@@ -49,13 +49,13 @@ const About = () => {
           <div className="table-cell border-b border-b-[#e6f1ff] border-opacity-25 w-full"></div>
         </div>
         <div className="text-[#a2aabc] text-lg mt-5">
-          <code>
+          <p>
             I am a motivated software engineering student, specializing in
-            various technologies and languages. I have experince utilizing
+            various technologies and languages. I have experience utilizing
             frontend frameworks such as Angular and React.js, as well as backend
             langaues such as Java and Python. Please view my projcets to get a
             better understanding of my abilities!
-          </code>
+          </p>
           <br />
           <br />
           <code>My Technologies:</code>

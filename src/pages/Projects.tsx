@@ -13,6 +13,9 @@ const c3 = require("../assets/images/c3.png");
 const c4 = require("../assets/images/c4.png");
 const d1 = require("../assets/images/d1.png");
 const d2 = require("../assets/images/d2.png");
+const g1 = require("../assets/images/g1.png");
+const g2 = require("../assets/images/g2.png");
+const g3 = require("../assets/images/g3.png");
 const wrodl = require("../assets/images/Wordle-Emblem.png");
 
 const projectsData = [
@@ -35,7 +38,7 @@ const projectsData = [
     description:
       "Developed a comprehensive budget tracker application named BudgetEz, utilizing the MERN stack (MongoDB, Express.js, React, Node.js). Integrated Clerk for secure user authentication. Enabled users to input income and expenses, displaying data to assist in effective budgeting. Implemented dynamic insights and analytics to provide users with actionable financial insights. Ensured a structured, maintainable, and scalable codebase with thorough documentation for seamless maintenance and future enhancements.",
     technologies: ["React", "Express.js", "MongoDB", "Node.js"],
-    imageUrls: [a1],
+    imageUrls: [g1, g2, g3],
   },
   {
     title: "Habit Spark: Habit Tracker",

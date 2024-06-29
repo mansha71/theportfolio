@@ -3,7 +3,8 @@ import { ClipboardListIcon } from "@heroicons/react/solid";
 
 const Resume = () => {
   const handleDownload = () => {
-    const resumeUrl = "https://drive.google.com/file/d/1Pg9_HDp_Q-Pa18bucZTg-AaLaG7go9HI/view";
+    const resumeUrl =
+      "https://drive.google.com/file/d/1rf2ceg2dUElmUpNbMHDWZnJS4eq6eb0M/view?usp=sharing";
     window.open(resumeUrl, "_blank");
   };
 
@@ -33,12 +34,12 @@ const Resume = () => {
             <div className="italic text-lightblue_vs">
               Bachelor's of Software Engineering Coop
             </div>
-            <div className="text-brown_vs">
-              • Sept 2021 - April 2026
-            </div>
+            <div className="text-brown_vs">• Sept 2021 - April 2026</div>
             <div className="text-blue_vs">Relevant Courses:</div>
             <div className="text-white_vs">
-              Software Design, Concurrent System Design, Object-Oriented Programming, Data Structures and Algorithms, Computer Architecture, Databases
+              Software Design, Concurrent System Design, Object-Oriented
+              Programming, Data Structures and Algorithms, Computer
+              Architecture, Databases
             </div>
           </div>
         </div>
@@ -49,16 +50,38 @@ const Resume = () => {
             <div className="italic text-lightblue_vs">
               SOTI Inc - Missisauga, Canada
             </div>
-            <div className="text-brown_vs">
-              • May 2024 - December 2024
-            </div>
+            <div className="text-brown_vs">• May 2024 - December 2024</div>
             <div className="mt-2">
               <ul className="list-disc list-inside">
-                <li>Contributed to the development and optimization of user interfaces and frontend features using Angular, HTML, CSS, and TypeScript, enhancing the functionality and user experience of SOTI Internet of Things (IoT) platform.</li>
-                <li>Participated in Agile development processes, including daily stand-ups and three-week sprints, utilizing Jira for issue tracking and Git for version control, ensuring effective project management and team collaboration.</li>
-                <li>Implemented continuous integration and deployment (CI/CD) pipelines with Jenkins, maintaining a stable and reliable codebase through automated testing and regular updates.</li>
-                <li>Collaborated with QA teams to develop and execute test plans, leveraging testing tools to ensure the quality and reliability of the software. Assisted in identifying and fixing bugs to improve overall performance.</li>
-                <li>Collaborated with a team of developers, gaining exposure to a wide range of tasks from fixing bugs to developing new features, providing hands-on experience in a dynamic work environment.</li>
+                <li>
+                  Contributed to the development and optimization of user
+                  interfaces and frontend features using Angular, HTML, CSS, and
+                  TypeScript, enhancing the functionality and user experience of
+                  SOTI Internet of Things (IoT) platform.
+                </li>
+                <li>
+                  Participated in Agile development processes, including daily
+                  stand-ups and three-week sprints, utilizing Jira for issue
+                  tracking and Git for version control, ensuring effective
+                  project management and team collaboration.
+                </li>
+                <li>
+                  Implemented continuous integration and deployment (CI/CD)
+                  pipelines with Jenkins, maintaining a stable and reliable
+                  codebase through automated testing and regular updates.
+                </li>
+                <li>
+                  Collaborated with QA teams to develop and execute test plans,
+                  leveraging testing tools to ensure the quality and reliability
+                  of the software. Assisted in identifying and fixing bugs to
+                  improve overall performance.
+                </li>
+                <li>
+                  Collaborated with a team of developers, gaining exposure to a
+                  wide range of tasks from fixing bugs to developing new
+                  features, providing hands-on experience in a dynamic work
+                  environment.
+                </li>
               </ul>
             </div>
           </div>
@@ -66,14 +89,26 @@ const Resume = () => {
         <div className="pt-10">
           <div className="text-yellow_vs text-2xl mb-2">Web Developer</div>
           <div className="ml-4 text-lg leading-relaxed">
-            <div className="text-blue_vs">McMaster Sumobot - Hamilton, Canada</div>
+            <div className="text-blue_vs">
+              McMaster Sumobot - Hamilton, Canada
+            </div>
             <div className="italic text-lightblue_vs">
               • May 2024 - December 2024
             </div>
             <div className="mt-2">
               <ul className="list-disc list-inside">
-                <li>Managed and maintained a highly dynamic website, employing a versatile tech stack including Vue.js, HTML, Javascript, CSS, and Node.js. Presented a seamless user experience, consistently meeting user expectations.</li>
-                <li>Collaborated with a diverse team to ensure timely updates based on client feedback. Streamlined development processes with Git, Yarn, and Node.js, and enhanced interactivity using innovative JavaScript techniques.</li>
+                <li>
+                  Managed and maintained a highly dynamic website, employing a
+                  versatile tech stack including Vue.js, HTML, Javascript, CSS,
+                  and Node.js. Presented a seamless user experience,
+                  consistently meeting user expectations.
+                </li>
+                <li>
+                  Collaborated with a diverse team to ensure timely updates
+                  based on client feedback. Streamlined development processes
+                  with Git, Yarn, and Node.js, and enhanced interactivity using
+                  innovative JavaScript techniques.
+                </li>
               </ul>
             </div>
           </div>

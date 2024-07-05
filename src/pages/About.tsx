@@ -18,18 +18,18 @@ const VueLogo = require("../assets/logos/vue.png");
 const amazon = require("../assets/logos/amazon.png");
 
 const skills = [
-  { name: "JavaScript", logo: JsLogo },
   { name: "TypeScript", logo: TypescriptLogo },
-  { name: "Angular", logo: AngularLogo },
-  { name: "Next.js", logo: NextLogo },
-  { name: "React", logo: ReactLogo },
-  { name: "Vue.js", logo: VueLogo },
-  { name: "Tailwind CSS", logo: TailwindLogo },
   { name: "Java", logo: JavaLogo },
   { name: "Python", logo: PythonLogo },
+  { name: "Angular", logo: AngularLogo },
+  { name: "JavaScript", logo: JsLogo },
+  { name: "React", logo: ReactLogo },
+  { name: "Vue.js", logo: VueLogo },
+  { name: "SQL", logo: SqlLogo },
+  { name: "Next.js", logo: NextLogo },
+  { name: "Tailwind CSS", logo: TailwindLogo },
   { name: "Firebase", logo: FirebaseLogo },
   { name: "Nodejs", logo: NodeJSLogo },
-  { name: "SQL", logo: SqlLogo },
   { name: "MongoDB", logo: MongoDBLogo },
   { name: "AWS", logo: amazon },
 ];
@@ -52,9 +52,9 @@ const About = () => {
           <p>
             I am a motivated software engineering student, specializing in
             various technologies and languages. I have experience utilizing
-            frontend frameworks such as Angular and React.js, as well as backend
-            langaues such as Java and Python. Please view my projcets to get a
-            better understanding of my abilities!
+            frontend frameworks such as Angular and React.js, as well as
+            languages such as Typescript, Java and Python. Please view my
+            projcets to get a better understanding of my abilities!
           </p>
           <br />
           <br />

@@ -87,13 +87,13 @@ const Resume = () => {
           </div>
         </div>
         <div className="pt-10">
-          <div className="text-yellow_vs text-2xl mb-2">Web Developer</div>
           <div className="ml-4 text-lg leading-relaxed">
+            <div className="text-blue_vs">Web Developer</div>
             <div className="text-blue_vs">
               McMaster Sumobot - Hamilton, Canada
             </div>
             <div className="italic text-lightblue_vs">
-              • May 2024 - December 2024
+              • Sept 2023 - April 2024
             </div>
             <div className="mt-2">
               <ul className="list-disc list-inside">
@@ -108,6 +108,36 @@ const Resume = () => {
                   based on client feedback. Streamlined development processes
                   with Git, Yarn, and Node.js, and enhanced interactivity using
                   innovative JavaScript techniques.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="pt-10">
+          <div className="ml-4 text-lg leading-relaxed">
+            <div className="text-blue_vs">Programming Tutor</div>
+            <div className="text-blue_vs">Self - Brampton, Canada</div>
+            <div className="italic text-lightblue_vs">
+              • May 2023 - Sept 2023
+            </div>
+            <div className="mt-2">
+              <ul className="list-disc list-inside">
+                <li>
+                  Guided students in mastering Python fundamentals, including
+                  key programming concepts and essential algorithm/data
+                  structure principles, through interactive and engaging
+                  methods, assignments, and hands-on exercises. - Designed
+                  numerous thoughtful lessons, fostering problem-solving skills
+                  and imparting Python programming expertise.
+                </li>
+                <li>
+                  Designed numerous thoughtful lessons, fostering
+                  problem-solving skills and imparting Python programming
+                  expertise.
+                </li>
+                <li>
+                  Mentored students to apply core knowledge to real-world
+                  projects, equipping them with practical abilities.
                 </li>
               </ul>
             </div>

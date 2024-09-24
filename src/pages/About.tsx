@@ -54,7 +54,7 @@ const About = () => {
             various technologies and languages. I have experience utilizing
             frontend frameworks such as Angular and React.js, as well as
             languages such as Typescript, Java and Python. Please view my
-            projcets to get a better understanding of my abilities!
+            projects to get a better understanding of my abilities!
           </p>
           <br />
           <br />

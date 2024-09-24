@@ -89,12 +89,10 @@ const Resume = () => {
         <div className="pt-10">
           <div className="ml-4 text-lg leading-relaxed">
             <div className="text-blue_vs">Web Developer</div>
-            <div className="text-blue_vs">
+            <div className="italic text-lightblue_vs">
               McMaster Sumobot - Hamilton, Canada
             </div>
-            <div className="italic text-lightblue_vs">
-              • Sept 2023 - April 2024
-            </div>
+            <div className="text-brown_vs">• Sept 2023 - April 2024</div>
             <div className="mt-2">
               <ul className="list-disc list-inside">
                 <li>
@@ -116,10 +114,10 @@ const Resume = () => {
         <div className="pt-10">
           <div className="ml-4 text-lg leading-relaxed">
             <div className="text-blue_vs">Programming Tutor</div>
-            <div className="text-blue_vs">Self - Brampton, Canada</div>
             <div className="italic text-lightblue_vs">
-              • May 2023 - Sept 2023
+              Self - Brampton, Canada
             </div>
+            <div className="text-brown_vs">• May 2023 - Sept 2023</div>
             <div className="mt-2">
               <ul className="list-disc list-inside">
                 <li>

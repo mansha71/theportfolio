@@ -4,7 +4,7 @@ import { ClipboardListIcon } from "@heroicons/react/solid";
 const Resume = () => {
   const handleDownload = () => {
     const resumeUrl =
-      "https://drive.google.com/file/d/1rf2ceg2dUElmUpNbMHDWZnJS4eq6eb0M/view?usp=sharing";
+      "https://drive.google.com/file/d/1J3zyo4B4a35K4pYKw4oOvXmkuJk_m4wO/view?usp=sharing";
     window.open(resumeUrl, "_blank");
   };
 
@@ -46,9 +46,47 @@ const Resume = () => {
         <div className="pt-10">
           <div className="text-yellow_vs text-2xl mb-2">Experience</div>
           <div className="ml-4 text-lg leading-relaxed">
+            <div className="text-blue_vs">Software Engineer Intern</div>
+            <div className="italic text-lightblue_vs">
+              Citi Bank - Missisauga, Canada
+            </div>
+            <div className="text-brown_vs">• May 2025 - August 2025</div>
+            <div className="mt-2">
+              <ul className="list-disc list-inside">
+                <li>Developed Angular features for YARDS, a reference data platform supporting trading desks, improving workflows.
+                </li>
+                <li>Implemented high-volume Java/Spring Boot APIs integrated with Oracle and STAN databases to validate and update reference datasets, reducing manual Swagger requests and saving the production team 10+ hours/week.
+                </li>
+                <li>Deployed services to production via OpenShift and Harness; delivered incrementally in Agile sprints with code reviews and CI/CD pipelines.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="pt-10">
+          <div className="ml-4 text-lg leading-relaxed">
+            <div className="text-blue_vs">Software Engineer Intern</div>
+            <div className="italic text-lightblue_vs">
+              Wave - Toronto, Canada
+            </div>
+            <div className="text-brown_vs">• Jan 2025 - April 2025</div>
+            <div className="mt-2">
+              <ul className="list-disc list-inside">
+                <li> Developed and unit-tested new React/TypeScript UI flows and Ruby-on-Rails APIs, integrating them into our microservice architecture and packaging each service in its own Docker image for local and staging environments. 
+                </li>
+                <li>Revamped end-to-end testing setup using Playwright, CircleCI, and Docker, reducing test runtime by 45% and minimizing flaky tests for faster, more reliable deployments. 
+                </li>
+                <li>Built a logger package to report errors to Sentry and Datadog, integrated into 4+ projects, improving observability.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="pt-10">
+          <div className="ml-4 text-lg leading-relaxed">
             <div className="text-blue_vs">Software Developer Intern</div>
             <div className="italic text-lightblue_vs">
-              SOTI Inc - Missisauga, Canada
+              SOTI - Missisauge, Canada
             </div>
             <div className="text-brown_vs">• May 2024 - December 2024</div>
             <div className="mt-2">

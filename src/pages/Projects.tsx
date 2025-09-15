@@ -16,9 +16,24 @@ const d2 = require("../assets/images/d2.png");
 const g1 = require("../assets/images/g1.png");
 const g2 = require("../assets/images/g2.png");
 const g3 = require("../assets/images/g3.png");
+const movie = require("../assets/images/movie.png");
 const wrodl = require("../assets/images/Wordle-Emblem.png");
 
 const projectsData = [
+    {
+    title: "MovieWiz",
+    description: "Developed a movie recommendation system, utilizing Python, PyTorch and Google Colab. Leveraged Machine Learning techniques on the IMDb dataset to analyze information and train the model. Utilized AWS’ DynamoDB and Cognito for storage and user authentication.",
+    technologies: [
+      "Python",
+      "PyTorch",
+      "tensorflow",
+      "Machine Learning",
+      "AWS DynamoDB",
+      "AWS Cognito",
+      "Google Colab",
+    ],
+    imageUrls: [movie],
+  },
   {
     title: "SecureLink",
     description:
@@ -68,7 +83,6 @@ const projectsData = [
     technologies: ["Python"],
     imageUrls: [wrodl],
   },
-  // Add more projects as needed
 ];
 
 const Projects = () => {
